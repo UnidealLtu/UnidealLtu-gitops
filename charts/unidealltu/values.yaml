@@ -1,0 +1,13 @@
+environment: local
+replicaCount: 1
+image:
+  repository: nginx
+  tag: stable-alpine
+  pullPolicy: IfNotPresent
+resources:
+  requests:
+    cpu: 25m
+    memory: 32Mi
+  limits:
+    cpu: 200m
+    memory: 128Mi

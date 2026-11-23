@@ -1,0 +1,5 @@
+apiVersion: v2
+name: unidealltu
+version: 0.1.0
+appVersion: "0.1.0"
+description: Minimal Helm placeholder used to bootstrap three Argo CD environments

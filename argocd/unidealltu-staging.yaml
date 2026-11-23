@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: unidealltu-staging
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/UnidealLtu/UnidealLtu-gitops.git
+    targetRevision: main
+    path: charts/unidealltu
+    helm:
+      releaseName: unidealltu-staging
+      valueFiles:
+        - values-staging.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: unidealltu-staging
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
