@@ -12,7 +12,7 @@ spec:
     helm:
       releaseName: unidealltu-prod
       valueFiles:
-        - values-prod.yaml
+        - ../../environments/production/values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: unidealltu-prod
