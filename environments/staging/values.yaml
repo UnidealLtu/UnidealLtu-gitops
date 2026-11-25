@@ -8,8 +8,8 @@ replicaCount: 1
 environment: Staging
 message: "Welcome to UniDeal Staging!"
 
-domain: unideal-staging.group-6-m7011e-.se
-email: jonmuh-3@student..se
+domain: unideal-staging.group-6-m7011e-se
+email: jonmuh-3@student.se
 
 image:
   repository: nginx

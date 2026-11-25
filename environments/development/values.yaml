@@ -8,8 +8,8 @@ replicaCount: 1
 environment: Development
 message: "Welcome to UniDeal Development!"
 
-domain: unideal-dev.group-6-m7011e-.se
-email: jonmuh-3@student..se
+domain: unideal-dev.group-6-m7011e-se
+email: jonmuh-3@student.se
 
 image:
   repository: nginx
