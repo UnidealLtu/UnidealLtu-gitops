@@ -6,20 +6,14 @@ app:
 replicaCount: 1
 
 environment: Development
-message: "Welcome to UniDeal Development!"
 
 domain: unideal-dev.group-6-m7011e-ltu.se
 email: jonmuh-3@student.se
 
 image:
-  repository: ghcr.io/unidealltu/unideal-frontend:v1
+  repository: ghcr.io/unidealltu/unideal-frontend
   tag: "v1"
   pullPolicy: IfNotPresent
-
-demoHtmlEnabled: false
-
-placeholder:
-  enabled: true
 
 ingress:
   enabled: true
