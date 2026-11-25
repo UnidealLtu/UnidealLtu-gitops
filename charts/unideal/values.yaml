@@ -13,3 +13,9 @@ resources:
   limits:
     cpu: 200m
     memory: 128Mi
+
+postgres:
+  enabled: false
+
+listings:
+  enabled: false

@@ -18,3 +18,23 @@ image:
 ingress:
   enabled: true
   certIssuer: letsencrypt-staging
+
+# PostgreSQL database
+postgres:
+  enabled: true
+  image: postgres:17-alpine
+  database: unideal_listings
+  user: unideal_dev
+  secretName: unideal-dev-postgres
+  storageClass: local-path
+  storage: 1Gi
+
+# FastAPI Listings Service
+listings:
+  enabled: true
+  replicaCount: 1
+
+  image:
+    repository: ghcr.io/unidealltu/unideal-listings-service
+    tag: latest
+    pullPolicy: Always
