@@ -1,6 +1,6 @@
-# UnidealLtu - GitOps
+# Unideal - GitOps
 
-The application source code is kept separately in [UnidealLtu-app](https://github.com/UnidealLtu/UnidealLtu-app).
+The application source code is kept separately in [Unideal-app](https://github.com/Unideal/Unideal-app).
 
 ## Environments
 
@@ -8,22 +8,22 @@ All three environments run in the same K3s cluster, with a separate Kubernetes n
 
 | Environment | Namespace | Argo CD application | Sync |
 | --- | --- | --- | --- |
-| Development | `unidealltu-dev` | `unidealltu-dev` | Automatic |
-| Staging | `unidealltu-staging` | `unidealltu-staging` | Manual |
-| Production | `unidealltu-prod` | `unidealltu-prod` | Manual |
+| Development | `unideal-dev` | `unideal-dev` | Automatic |
+| Staging | `unideal-staging` | `unideal-staging` | Manual |
+| Production | `unideal-prod` | `unideal-prod` | Manual |
 
 Each environment has its own values file in `environments/`.
 
 ## Repository structure
 
 ```text
-UnidealLtu-gitops/
+Unideal-gitops/
 ├── argocd/
-│   ├── unidealltu-dev.yaml
-│   ├── unidealltu-staging.yaml
-│   └── unidealltu-prod.yaml
+│   ├── unideal-dev.yaml
+│   ├── unideal-staging.yaml
+│   └── unideal-prod.yaml
 ├── charts/
-│   └── unidealltu/
+│   └── unideal/
 │       ├── Chart.yaml
 │       ├── values.yaml
 │       └── templates/

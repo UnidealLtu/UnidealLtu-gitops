@@ -1,21 +1,21 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: unidealltu-prod
+  name: unideal-prod
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/UnidealLtu/UnidealLtu-gitops.git
+    repoURL: https://github.com/Unideal/Unideal-gitops.git
     targetRevision: main
-    path: charts/unidealltu
+    path: charts/unideal
     helm:
-      releaseName: unidealltu-prod
+      releaseName: unideal-prod
       valueFiles:
         - ../../environments/production/values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: unidealltu-prod
+    namespace: unideal-prod
   syncPolicy:
     syncOptions:
       - CreateNamespace=true

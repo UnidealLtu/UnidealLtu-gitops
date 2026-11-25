@@ -8,8 +8,8 @@ replicaCount: 1
 environment: Production
 message: "Welcome to UniDeal Production!"
 
-domain: unideal-prod.group-6-m7011e-ltu.se
-email: jonmuh-3@student.ltu.se
+domain: unideal-prod.group-6-m7011e-.se
+email: jonmuh-3@student..se
 
 image:
   repository: nginx

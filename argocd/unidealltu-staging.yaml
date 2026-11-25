@@ -1,21 +1,21 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: unidealltu-staging
+  name: unideal-staging
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/UnidealLtu/UnidealLtu-gitops.git
+    repoURL: https://github.com/Unideal/Unideal-gitops.git
     targetRevision: main
-    path: charts/unidealltu
+    path: charts/unideal
     helm:
-      releaseName: unidealltu-staging
+      releaseName: unideal-staging
       valueFiles:
         - ../../environments/staging/values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: unidealltu-staging
+    namespace: unideal-staging
   syncPolicy:
     syncOptions:
       - CreateNamespace=true

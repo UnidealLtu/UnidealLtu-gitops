@@ -4,7 +4,7 @@ kind: ConfigMap
 metadata:
   name: {{ .Release.Name }}-html
   labels:
-    app.kubernetes.io/name: unidealltu
+    app.kubernetes.io/name: unideal
     app.kubernetes.io/instance: {{ .Release.Name }}
 
 data:
