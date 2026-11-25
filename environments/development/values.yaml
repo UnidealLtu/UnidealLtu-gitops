@@ -28,6 +28,7 @@ postgres:
   secretName: unideal-dev-postgres
   storageClass: local-path
   storage: 1Gi
+  appArmorUnconfined: true
 
 # FastAPI Listings Service
 listings:

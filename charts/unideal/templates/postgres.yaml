@@ -50,6 +50,13 @@ spec:
         app: {{ .Release.Name }}-postgres
 
     spec:
+      # Optional AppArmor workaround
+      {{- if .Values.postgres.appArmorUnconfined }}
+      securityContext:
+        appArmorProfile:
+          type: Unconfined
+      {{- end }}
+
       containers:
         - name: postgres
           image: {{ .Values.postgres.image }}
