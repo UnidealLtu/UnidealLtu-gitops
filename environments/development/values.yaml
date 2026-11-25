@@ -12,9 +12,11 @@ domain: unideal-dev.group-6-m7011e-ltu.se
 email: jonmuh-3@student.se
 
 image:
-  repository: nginx
-  tag: alpine
+  repository: ghcr.io/unidealltu/unideal-frontend:v1
+  tag: "v1"
   pullPolicy: IfNotPresent
+
+demoHtmlEnabled: false
 
 placeholder:
   enabled: true

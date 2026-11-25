@@ -14,7 +14,6 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
       labels:
         app.kubernetes.io/name: unideal
         app.kubernetes.io/instance: {{ .Release.Name }}
@@ -36,13 +35,4 @@ spec:
               path: /
               port: http
           resources:
-            {{- toYaml .Values.resources | nindent 12 }}
-          volumeMounts:
-            - name: html
-              mountPath: /usr/share/nginx/html/index.html
-              subPath: index.html
-              readOnly: true
-      volumes:
-        - name: html
-          configMap:
-            name: {{ .Release.Name }}-html
+            
