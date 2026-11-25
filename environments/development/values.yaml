@@ -1,2 +1,24 @@
-environment: dev
+# Development Environment Configuration
+
+app:
+  name: unideal
+
 replicaCount: 1
+
+environment: Development
+message: "Welcome to UniDeal Development!"
+
+domain: unideal-dev.group-6-m7011e-ltu.se
+email: jonmuh-3@student.ltu.se
+
+image:
+  repository: nginx
+  tag: alpine
+  pullPolicy: IfNotPresent
+
+placeholder:
+  enabled: true
+
+ingress:
+  enabled: true
+  certIssuer: letsencrypt-staging
