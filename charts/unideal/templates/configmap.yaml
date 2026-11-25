@@ -20,5 +20,6 @@ data:
         <p>{{ .Values.message }}</p>
         <p>Argo CD and Helm successfully deployed this environment.</p>
         <p>This page is a temporary Nginx placeholder, not the React application.</p>
+        <p>This is auto sync test text</p>
       </body>
     </html>
