@@ -1,7 +1,5 @@
 # Unideal - GitOps
 
-Testing testing
-
 The application source code is kept separately in [Unideal-app](https://github.com/Unideal/Unideal-app).
 
 ## Environments
@@ -38,5 +36,3 @@ Unideal-gitops/
 │   └── production/values.yaml
 └── README.md
 ```
-
-Auto sync test text
