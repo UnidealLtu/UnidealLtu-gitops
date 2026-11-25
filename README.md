@@ -36,3 +36,5 @@ Unideal-gitops/
 │   └── production/values.yaml
 └── README.md
 ```
+
+Auto sync test text
